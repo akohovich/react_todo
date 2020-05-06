@@ -4,7 +4,7 @@ const AppHeader = () => {
 
     const appHeaderStyles = {
       fontSize: '40px',
-      color: 'red',
+      color: 'black',
     }
     return <h1 style={appHeaderStyles}>Todo List</h1>;
   }
