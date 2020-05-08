@@ -8,3 +8,10 @@
     margin-right: 0.1rem;
 }
 
+.todo-list-label{
+    cursor: pointer;
+}
+
+.todo-list-label.done{
+    text-decoration: line-through;
+}
