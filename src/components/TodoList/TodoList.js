@@ -4,7 +4,8 @@ import React from 'react';
 import './TodoList.css';
 import TodoListItem from '../TodoListItem';
 
-const TodoList = ({todoItems, onDelete}) => {
+const TodoList = ({todoItems, onDelete,
+onToggleImportant, onToggleDone}) => {
 
     const elements = todoItems.map((element) => {
         
@@ -13,7 +14,10 @@ const TodoList = ({todoItems, onDelete}) => {
         return (
             <li key={id} className="list-group-item">
                 <TodoListItem {...otherProps}
-                onDelete={() => onDelete(id)}/>
+                    onDelete={() => onDelete(id)}
+                    onToggleImportant={() => onToggleImportant(id)}
+                    onToggleDone={() => onToggleDone(id)}
+                />
             </li>
         );
     });
