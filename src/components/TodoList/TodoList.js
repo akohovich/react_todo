@@ -22,7 +22,7 @@ onToggleImportant, onToggleDone}) => {
         );
     });
 
-    return (<ul className="list-group">
+    return (<ul className="list-group todo-list">
         {elements}
     </ul>);
   
